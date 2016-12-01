@@ -1,0 +1,150 @@
+body {
+	background-image: url(http://i.imgur.com/oXaTCCx.jpg);
+	background-position:center center;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-top:0px;
+}
+
+.container {
+	background:rgba(255, 255, 255, 0.8);
+	height:100vh;
+	width:100%;
+	max-width:650px;
+	margin:0 auto;
+}
+
+.header {
+	text-align:center;
+	font-family:"Amatic SC", sans-serif;
+	font-size:7.0vmin;
+	font-weight:bolder;
+	padding:10px;
+}
+
+hr { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: black; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: black; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+.usage {
+	width:89%;
+	margin:10px auto 0 auto;
+	padding:5px;
+	border:1px black dotted;
+	background-color:rgb(255, 248, 176);
+	font-family:Glegoo;
+	font-size:15px;
+	text-align:center;
+}
+
+.divTable {
+	display:table;
+	width:90%;
+	margin:0 auto;
+	border:5px black solid;
+	border-collapse: collapse;
+}
+
+.divCaption {
+	background-color:rgb(0,0,0);
+	display:table-caption;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+}
+
+.divTitleBlock {
+	background:rgb(0,0,0);
+	display:table-cell;
+	text-align:center;
+	padding:0px 10px 0px 10px;
+}
+
+.divRow {
+	display:table-row;
+	border-bottom:5px black solid;
+}
+
+.divCell {
+	display:table-cell;
+	padding:20px 0px 20px 0px;
+	text-align:center;
+}
+
+.orBlock {
+	font-family:Glegoo;
+	font-size:30px;
+	font-weight:bold;
+	vertical-align: middle;
+}
+
+.title {
+	color:white;
+	font-family:'Glegoo';
+	font-size:20px;
+	font-weight:bold;
+	vertical-align:middle;
+}
+
+.btnCell {
+	padding-right:10px;
+}
+
+.footer {
+	width:90%;
+	margin:10px auto 10px auto;
+	text-align:center;
+}
+
+.errorMessage {
+	display:none;
+	width:90%;
+	margin:20px auto 0px auto;
+	background:rgb(255, 175, 175);
+	color:rgb(255, 57, 57);
+	font-family:Glegoo;
+	font-size:15px;
+	font-weight:bold;
+	border: 1px dashed rgb(255, 57, 57);
+	border-radius:4px;
+	text-align:center;
+}
+
+input[type=text] {
+	width:80px;
+}
+
+label {
+	font-family:Glegoo;
+	font-weight: bolder;
+}
+
+button {
+	border:none;
+	background-color:rgb(64, 166, 255);
+	color:white;
+	border-radius:4px;
+	font-family:Glegoo;
+	font-weight:bold;
+	width:75px;
+	font-size:10px;
+	outline:none;
+}
+
+#distanceSelect {
+	margin-top:5px;
+}
