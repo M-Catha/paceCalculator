@@ -282,6 +282,8 @@ function paceToMiles(distance) {
 	switch(distance) {
 		case "mile":
 			return 1.00;
+		case "km":
+			return 0.621371;
 		case "220":
 			return 0.125;
 		case "440":
@@ -359,4 +361,5 @@ $("#resetButton").on("click", function() {
 	$("input").val("");
 	$("#distanceSelect").val("");
 	$("#eventSelect").val("");
+	$(".errorMessage").hide("fast");
 });
