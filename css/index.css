@@ -1,5 +1,5 @@
 body {
-	background-image: url(http://i.imgur.com/oXaTCCx.jpg);
+	background-image: url(../images/bgImage.jpg);
 	background-position:center center;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
@@ -11,7 +11,7 @@ body {
 	background:rgba(255, 255, 255, 0.8);
 	height:100vh;
 	width:100%;
-	max-width:650px;
+	max-width:900px;
 	margin:0 auto;
 }
 
@@ -42,13 +42,12 @@ hr:before {
 }
 
 .usage {
-	width:89%;
+	width:75%;
 	margin:10px auto 0 auto;
-	padding:5px;
 	border:1px black dotted;
 	background-color:rgb(255, 248, 176);
 	font-family:Glegoo;
-	font-size:15px;
+	font-size:25px;
 	text-align:center;
 }
 
@@ -95,13 +94,13 @@ hr:before {
 .title {
 	color:white;
 	font-family:'Glegoo';
-	font-size:20px;
+	font-size:30px;
 	font-weight:bold;
 	vertical-align:middle;
 }
 
 .btnCell {
-	padding-right:10px;
+	padding:0px 20px 0px 20px;
 }
 
 .footer {
@@ -117,7 +116,7 @@ hr:before {
 	background:rgb(255, 175, 175);
 	color:rgb(255, 57, 57);
 	font-family:Glegoo;
-	font-size:15px;
+	font-size:30px;
 	font-weight:bold;
 	border: 1px dashed rgb(255, 57, 57);
 	border-radius:4px;
@@ -125,12 +124,18 @@ hr:before {
 }
 
 input[type=text] {
-	width:80px;
+	width:90px;
+	font-size:20px;
+}
+
+select {
+	font-size:20px;
 }
 
 label {
 	font-family:Glegoo;
 	font-weight: bolder;
+	font-size:25px;
 }
 
 button {
@@ -140,11 +145,35 @@ button {
 	border-radius:4px;
 	font-family:Glegoo;
 	font-weight:bold;
-	width:75px;
-	font-size:10px;
+	width:auto;
+	font-size:20px;
 	outline:none;
 }
 
 #distanceSelect {
 	margin-top:5px;
+}
+
+.time {
+	color:rgb(0, 129, 199);
+}
+
+.timeBg {
+	background-color:rgba(0, 129, 199, 0.2);
+}
+
+.distance {
+	color:rgb(255, 77, 106);
+}
+
+.distanceBg {
+	background-color:rgba(255, 77, 106, 0.2);
+}
+
+.pace {
+	color:rgb(0, 199, 63);
+}
+
+.paceBg {
+	background-color:rgba(0, 199, 63, 0.2);
 }

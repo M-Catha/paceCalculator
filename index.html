@@ -14,15 +14,26 @@
 				<hr />
 			</div>
 			<div class="usage">
-				<span>To use this calculator, fill in 2 of the 3 fields to calculate the blank field (time, distance, or pace)</span>
+				<span>To use this calculator, fill out the following:
+				<ul>
+					<li>
+					To calculate <span class="time">Time</span>, fill out <span class="distance">Distance</span> and <span class="pace">Pace</span>
+					</li>
+					<li>
+					To calculate <span class="distance">Distance</span>, fill out <span class="time">Time</span> and <span class="pace">Pace</span>
+					</li>
+					<li>
+					To calculate <span class="pace">Pace</span>, fill out <span class="time">Time</span> and <span class="distance">Distance</span>
+					</li>
+				</span>
 			</div>
 			<div class="divTable">
 				<div class="divCaption">
 					<span class="title">Pace Calculator</span>
 				</div>
-				<div class="divRow">
+				<div class="divRow timeBg">
 					<div class="divTitleBlock">
-						<span class="title">Time</span>
+						<span class="title time">Time</span>
 					</div>
 					<div class="divCell">
 						<label>Hours</label>
@@ -40,9 +51,9 @@
 						<button id="timeButton">Calculate Time</button>
 					</div>
 				</div>
-				<div class="divRow">
+				<div class="divRow distanceBg">
 					<div class="divTitleBlock">
-						<span class="title">Distance</span>
+						<span class="title distance">Distance</span>
 					</div>
 					<div class="divCell">
 						<label>Custom Distance</label>
@@ -96,9 +107,9 @@
 						<button id="distanceButton">Calculate Distance</button>
 					</div>
 				</div>
-				<div class="divRow">
+				<div class="divRow paceBg">
 					<div class="divTitleBlock">
-						<span class="title">Pace</span>
+						<span class="title pace">Pace</span>
 					</div>
 					<div class="divCell">
 						<label>Hours</label>

@@ -83,7 +83,7 @@ var timeFunction = function(hours, minutes, seconds) {
 	var formatMinutes = formatUnit(timeInMinutes);
 	var formatSeconds = formatUnit(timeInSeconds);
 
-	if (timeInHours > 24 || timeInHours < 0) {
+	if (timeInHours < 0) {
 		error("hours");
 		abort();
 	} else if (timeInMinutes >= 60 || timeInMinutes < 0) {
@@ -336,10 +336,7 @@ function error(code){
 			errorText = "Minutes must be < 60 and non-negative!";
 			break;
 		case "hours":
-			errorText = "Hours must be < 25 and non-negative!";
-			break;
-		case "nonInt":
-			errorText = "No special characters allowed!";
+			errorText = "Hours must be non-negative!";
 			break;
 		default:
 			break;
