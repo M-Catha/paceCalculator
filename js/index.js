@@ -154,23 +154,13 @@ var distanceFunction = function(){
 	var distanceUnit = $("#distanceSelect").val();
 	var eventSelect = $("#eventSelect").val();
 
-	if (distance === "" && distanceUnit !== "") {
-		error("noDistance");
-		abort();
-	} else if (distance === "" && eventSelect === "") {
+	if (distance === "" && eventSelect === "") {
 		error("chooseEvent");
-		abort();
-	} else if (distance === "" && distanceUnit !== "") {
-		error("noDistance");
 		abort();
 	} else if (distance !== "" && eventSelect !== "") {
 		error("chooseOneEvent");
 		abort();
-	} else if (distance !== "" && distanceUnit === "") {
-		error("chooseDistanceUnit");
-		abort();
-	} 
-	else {
+	} else {
 		var formatDistance = formatUnit(distance)
 		var distanceInMiles = 0;
 
@@ -317,9 +307,6 @@ function error(code){
 		case "chooseOneEvent":
 			errorText = "Can only have ONE custom distance or event!";
 			break;
-		case "chooseDistanceUnit":
-			errorText = "No distance unit selected!";
-			break;
 		case "noPace":
 			errorText = "Please fill out pace parameters (hh:mm:ss)!";
 			break;
@@ -356,7 +343,6 @@ function abort() {
 $("#resetButton").on("click", function() {
 	
 	$("input").val("");
-	$("#distanceSelect").val("");
 	$("#eventSelect").val("");
 	$(".errorMessage").hide("fast");
 });

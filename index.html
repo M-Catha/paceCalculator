@@ -62,7 +62,6 @@
 						</div>
 						<div>
 							<select id="distanceSelect">
-								<option value=""></option>
 								<option value="miles">Miles</option>
 								<option value="km">Kilometers</option>
 								<option value="m">Meters</option>
@@ -107,7 +106,7 @@
 						<button id="distanceButton">Calculate Distance</button>
 					</div>
 				</div>
-				<div class="divRow paceBg">
+				<div class="divRow paceBg lastRow">
 					<div class="divTitleBlock">
 						<span class="title pace">Pace</span>
 					</div>
@@ -118,9 +117,23 @@
 					<div class="divCell">
 						<label>Minutes</label>
 						<input id="paceMinutes" type="text" maxlength="2">
-						<div>
-							<label>Per:</label>
-							<select id="paceSelect">
+					</div>
+					<div class="divCell">
+						<label>Seconds</label>
+						<input id="paceSeconds" type="text" maxlength="2">
+					</div>
+					<div class="divCell btnCell">
+						<button id="paceButton">Calculate Pace</button>
+					</div>
+				</div>
+				<div class="divRow paceBg">
+					<div class="divTitleBlock">
+					</div>
+					<div class="divCell">
+					</div>
+					<div class="paceCell">
+						<label>Per:</label>
+						<select id="paceSelect">
 								<option value="mile">Mile</option>
 								<option value="km">Kilometer</option>
 								<optgroup label="Yards">
@@ -135,14 +148,10 @@
 									<option value="1500">1500</option>
 								</optgroup>
 							</select>
-						</div>
 					</div>
 					<div class="divCell">
-						<label>Seconds</label>
-						<input id="paceSeconds" type="text" maxlength="2">
 					</div>
-					<div class="divCell btnCell">
-						<button id="paceButton">Calculate Pace</button>
+					<div class="divCell">
 					</div>
 				</div>
 			</div>
