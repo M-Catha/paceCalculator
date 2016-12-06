@@ -7,8 +7,6 @@ A running calculator used for calculating:
 
 Made with HTML, CSS, Javascript, and jQuery.
 
-PHP file is strictly to use Heroku for hosting.
-
 Live Demo seen here: 
 
-[Running Calculator](https://pace-calculator-app.herokuapp.com/index.html)
+[Running Calculator](http://codepen.io/MCatha/pen/ZBoWKp)
