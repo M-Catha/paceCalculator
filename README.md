@@ -7,6 +7,6 @@ A running calculator used for calculating:
 
 Made with HTML, CSS, Javascript, and jQuery.
 
-Live demo seen here: 
+Live demo here: 
 
 [Running Calculator](http://codepen.io/MCatha/pen/ZBoWKp)
