@@ -9,4 +9,4 @@ Made with HTML, CSS, Javascript, and jQuery.
 
 Live demo here: 
 
-[Running Calculator](http://codepen.io/MCatha/pen/ZBoWKp)
+[Running Calculator](http://codepen.io/MCatha/full/ZBoWKp/)
