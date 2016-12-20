@@ -8,7 +8,7 @@ A running calculator used for calculating:
 Some error handling has been implemented to handle:
 * < 2 categories filled out
 * More than one distance chosen (manually entered or picked from list)
-* Negative minutes/seconds, minutes/seconds > 60, or non-integers input in each field
+* Negative minutes/seconds or minutes/seconds > 60 in each field
 
 Made with HTML, CSS, Javascript, and jQuery.
 
