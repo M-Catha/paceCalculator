@@ -14,4 +14,6 @@ Build using HTML, CSS, Javascript, and jQuery.
 
 Live demo here: 
 
-[Running Calculator](http://codepen.io/MCatha/full/ZBoWKp/)
+[Code Pen](http://s.codepen.io/MCatha/debug/ZBoWKp)
+
+
