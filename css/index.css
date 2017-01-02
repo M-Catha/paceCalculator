@@ -25,11 +25,11 @@ body {
 }
 
 .usage {
-	width:60%;
+	width:70%;
 	margin:10px auto 0 auto;
 	border:1px black dotted;
 	background:rgb(255, 248, 176);
-	font-size:20px;
+	font-size:0.90em;
 }
 
 .divTable {
