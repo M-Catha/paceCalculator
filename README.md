@@ -14,6 +14,6 @@ Build using HTML, CSS, Javascript, and jQuery.
 
 Live demo here: 
 
-[Code Pen](http://s.codepen.io/MCatha/debug/ZBoWKp)
+[Github Pages](https://m-catha.github.io/paceCalculator/)
 
 
