@@ -10,7 +10,7 @@ body {
 .container {
 	background:rgba(255, 255, 255, 0.8);
 	overflow:auto;
-  height:1000px;
+  	height:1050px;
 	width:100%;
 	max-width:900px;
 	margin:100px auto;
