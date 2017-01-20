@@ -183,7 +183,7 @@ function distanceToMiles(distance) {
 		case "km":
 			return 0.621371;
 		case "m":
-			return 0.00621371;
+			return 0.000621371;
 		case "yds":
 			return 0.000568182;
 		default:
