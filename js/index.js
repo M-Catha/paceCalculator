@@ -57,7 +57,7 @@ $("#timeButton").on("click", function() {
 
 	if (getPaceTime === "") {
 		error("noPace");
-		abort();
+		return;
 	} else {
 
 	// Get time based on distance and pace
@@ -85,13 +85,13 @@ var timeFunction = function(hours, minutes, seconds) {
 
 	if (timeInHours < 0) {
 		error("hours");
-		abort();
+		return;
 	} else if (timeInMinutes >= 60 || timeInMinutes < 0) {
 		error("minutes");
-		abort();
+		return;
 	} else if (timeInSeconds >= 60 || timeInSeconds < 0) {
 		error("seconds");
-		abort();
+		return;
 	} else if (formatHours === 0 && formatMinutes === 0 && formatSeconds === 0) {
 		return "";
 	} else {
@@ -134,13 +134,13 @@ $("#distanceButton").on("click", function() {
 
 	if (getTime === "") {
 		error("noTime");
-		abort();
+		return;
 	} else if(getPaceTime === "") {
 		error("noPace");
-		abort();
+		return;
 	} else if (distanceUnit === "") {
 		error("chooseDistanceUnit");
-		abort();
+		return;
 	} else {
 		$("#distance").val(distance.toFixed(2));
 	}
@@ -156,10 +156,10 @@ var distanceFunction = function(){
 
 	if (distance === "" && eventSelect === "") {
 		error("chooseEvent");
-		abort();
+		return;
 	} else if (distance !== "" && eventSelect !== "") {
 		error("chooseOneEvent");
-		abort();
+		return;
 	} else {
 		var formatDistance = formatUnit(distance)
 		var distanceInMiles = 0;
@@ -245,7 +245,7 @@ $("#paceButton").on("click", function() {
 
 	if (getTime === "") {
 		error("noTime");
-		abort();
+		return;
 	} else {
 
 	var pace = getDistance / getTime;
@@ -331,10 +331,6 @@ function error(code){
 	$(".errorText").text(errorText);
 	$(".errorMessage").show("fast");
 };
-
-function abort() {
-	throw new Error();
-}
 
 /****************
 /* RESET FUNCTION
